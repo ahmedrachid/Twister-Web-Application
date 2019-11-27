@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>Twister</display-name>
+  <servlet>
+    <servlet-name>createUser</servlet-name>
+    <servlet-class>servlet.User</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddMessages</servlet-name>
+    <servlet-class>servlet.AddMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListMessages</servlet-name>
+    <servlet-class>servlet.ListMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveMessages</servlet-name>
+    <servlet-class>servlet.RemoveMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>servlet.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>servlet.Logout</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddFriends</servlet-name>
+    <servlet-class>servlet.AddFriends</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveFriends</servlet-name>
+    <servlet-class>servlet.RemoveFriend</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddComment</servlet-name>
+    <servlet-class> servlet.AddComment </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveComment</servlet-name>
+    <servlet-class> servlet.RemoveComment </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddLike</servlet-name>
+    <servlet-class> servlet.AddLike </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveLike</servlet-name>
+    <servlet-class> servlet.RemoveLike </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListFriend</servlet-name>
+    <servlet-class> servlet.ListFriend </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListConnected</servlet-name>
+    <servlet-class> servlet.ListConnected</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createUser</servlet-name>
+    <url-pattern>/user/create</url-pattern>
+  </servlet-mapping>
+   
+  <servlet-mapping>
+    <servlet-name>AddMessages</servlet-name>
+    <url-pattern>/message/addmessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListMessages</servlet-name>
+    <url-pattern>/message/listmessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveMessages</servlet-name>
+    <url-pattern>/message/removemessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/user/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/user/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFriends</servlet-name>
+    <url-pattern>/user/addfriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveFriends</servlet-name>
+    <url-pattern>/user/removefriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddComment</servlet-name>
+    <url-pattern> /message/addcomment </url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveComment</servlet-name>
+    <url-pattern> /message/removecomment </url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddLike</servlet-name>
+    <url-pattern> /message/addlike </url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveLike</servlet-name>
+    <url-pattern> /message/removelike </url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListFriend</servlet-name>
+    <url-pattern> /friends/list </url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListConnected</servlet-name>
+    <url-pattern> /listconnected </url-pattern>
+  </servlet-mapping>
+
+
+
+
+ <filter>
+    <filter-name>CorsFilter</filter-name>
+    <filter-class>CORSFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>CorsFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+</web-app>
