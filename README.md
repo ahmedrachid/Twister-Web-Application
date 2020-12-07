@@ -1,4 +1,11 @@
-# Twister-Web-Application
-Twister web application frontend developed with ReactJS and server-side with JavaEE
+# Twitter Fullstack Clone
 
-Don't forget to leave a star if you find it helpful ! :)
+Fullstack clone of Twitter. Created with ReactJS, JavaEE, MongoDB and PostgreSQL.
+
+The objective of this project is to be an example of a real-world application that is not trivial, with everything working together.
+
+## 🛠 Tech Stack:
+
+- Front-end: ReactJS, JavaScript
+- Back-end: JavaEE, PostgreSQL, MongoDB
+- Infrastructure: Docker
