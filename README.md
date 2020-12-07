@@ -1,4 +1,4 @@
-# Twitter Fullstack Clone
+# 🚀 Twitter Fullstack Clone
 
 Fullstack clone of Twitter. Created with ReactJS, JavaEE, MongoDB and PostgreSQL.
 
